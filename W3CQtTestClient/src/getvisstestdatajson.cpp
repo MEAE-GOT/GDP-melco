@@ -63,7 +63,8 @@ QString GetVissTestDataJson::getSubscriptionJson(QString& requestId)
     //  "filters": { "range": { "above": 100, "below": 200 } },
 
     jsonObject.insert("action","subscribe");
-    jsonObject.insert("path","Signal.Drivetrain.Transmission.Speed");
+    jsonObject.insert("path","Signal.Vehicle.Speed");
+   // jsonObject.insert("path","Signal.Drivetrain.Transmission.Speed");
 
     //jsonRangeObject.insert("above",50);
     //jsonRangeObject.insert("below",200);
@@ -83,7 +84,8 @@ QString GetVissTestDataJson::getGetJson(QString& requestId)
 {
     QJsonObject jsonObject;
     jsonObject.insert("action","get");
-    jsonObject.insert("path","Signal.ADAS.CruiseControl.IsActive");
+    jsonObject.insert("path","Signal.Vehicle.Speed");
+    //jsonObject.insert("path","Signal.ADAS.CruiseControl.IsActive");
     jsonObject.insert("requestId", requestId);
 
     QJsonDocument jsonDoc(jsonObject);
@@ -95,6 +97,7 @@ QString GetVissTestDataJson::getGetManyJson(QString& requestId)
     QJsonObject jsonObject;
     jsonObject.insert("action","get");
     jsonObject.insert("path","Signal.Cabin.Door.*.IsLocked");
+    //jsonObject.insert("path","Signal.Cabin.Door.*.IsLocked");
     jsonObject.insert("requestId", requestId);
 
     QJsonDocument jsonDoc(jsonObject);
@@ -105,7 +108,8 @@ QString GetVissTestDataJson::getGetVssJson(QString& requestId)
 {
     QJsonObject jsonObject;
     jsonObject.insert("action","getMetadata");
-    jsonObject.insert("path","Signal.Drivetrain.Transmission.Speed");
+    jsonObject.insert("path","");
+    //jsonObject.insert("path","Signal.Drivetrain.Transmission.Speed");
     //jsonObject.insert("path","Signal.ADAS.CruiseControl.IsActive");
     jsonObject.insert("requestId",requestId);
 
@@ -123,7 +127,8 @@ QString GetVissTestDataJson::getSetJson(QString& requestId)
     QJsonObject jsonObject;
     m_setValue = true;
     jsonObject.insert("action","set");
-    jsonObject.insert("path","Signal.ADAS.CruiseControl.IsActive");
+    jsonObject.insert("path","Signal.Vehicle.Speed");
+    //jsonObject.insert("path","Signal.ADAS.CruiseControl.IsActive");
     jsonObject.insert("value", m_setValue.toBool());
     jsonObject.insert("requestId",requestId);
 
@@ -137,6 +142,7 @@ QString GetVissTestDataJson::getSetManyJson(QString& requestId)
 
     jsonObject.insert("action","set");
     jsonObject.insert("path","Signal.ADAS.CruiseControl.*");
+    //jsonObject.insert("path","Signal.ADAS.CruiseControl.*");
 
     QJsonArray values;
 

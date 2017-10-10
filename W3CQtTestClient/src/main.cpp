@@ -54,7 +54,7 @@ int main(int argc, char *argv[])
     parser.process(a);
     //qDebug() << parser.optionNames();
 
-    int nrOfClients = 1; // Default number of clients
+    int nrOfClients = 5; // Default number of clients
     if(parser.isSet(clientOption))
     {
         nrOfClients = parser.value(clientOption).toInt();    // Needs better validation
@@ -114,13 +114,13 @@ int main(int argc, char *argv[])
     if(tests.length() == 0)
     {
         //tests << TestCase::AUTHORIZE_SUCCESS;
-        //tests << TestCase::GET_VSS;
-        //tests << TestCase::GET;
+        tests << TestCase::GET_VSS;
+        tests << TestCase::GET;
         //tests << TestCase::GET_MANY;
-        //tests << TestCase::SET;
-        //tests << TestCase::GET;
+        tests << TestCase::SET;
+        tests << TestCase::GET;
         //tests << TestCase::SET_MANY;
-        tests << TestCase::SUBSCRIBE_UNSUBSCRIBE;
+        //tests << TestCase::SUBSCRIBE_UNSUBSCRIBE;
         //tests << TestCase::STATUS;
         //tests << TestCase::SUBSCRIBEALL_UNSUBSCRIBEALL;
 
