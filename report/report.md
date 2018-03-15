@@ -462,15 +462,15 @@ public static boolean ValidateRequest(String json) {
 
 [10] https://www.genivi.org
 
-[11] https://github.com/PeterWinzell/vehicle-carsignal-examples/tree/master/W3CDemo_2
+[11] https://github.com/MEAE-GOT/vehicle-carsignal-examples/tree/master/W3CDemo_2
 
 [12] https://www.opends.eu
 
-[13] https://github.com/PeterWinzell/vehicle-carsignal-examples/tree/master/iphoneclient/W3CDemo_2/W3CDemo_2/W3CDemo_2
+[13] https://github.com/MEAE-GOT/vehicle-carsignal-examples/tree/master/iphoneclient/W3CDemo_2/W3CDemo_2/W3CDemo_2
 
-[14] https://github.com/PeterWinzell/GDP-melco/blob/master/W3CTestClient/public_html/index.html
+[14] https://github.com/MEAE-GOT/GDP-melco/blob/master/W3CTestClient/public_html/index.html
 
-[15] https://github.com/PeterWinzell/GDP-melco/tree/master/W3CQtTestClient
+[15] https://github.com/MEAE-GOT/GDP-melco/blob/master/W3CQtTestClient
 
 [16] https://w3c.github.io/automotive/vehicle_data/vehicle_information_service.html
 
